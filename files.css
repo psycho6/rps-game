@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+body{
+    background-color: lavender;
+}
+.choice-container{
+    margin-top: 8rem !important;
+    margin: auto;
+    width: 64rem;
+    align-items: flex-end;
+    height: 48rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.choice2{
+    align-self: flex-start;
+}
+.choice-image{
+    border-radius: 50%;
+    width: 18rem;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    box-shadow: -0.5rem 0.5rem 2rem rgb(52, 55, 58); 
+}
+.choice-image:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5rem lightslategray;
+}
+.hero{
+    font-size: 5.5rem;
+    font-family:  'Fredoka One', cursive;
+    color: rgb(53, 52, 51);
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.scores{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap : 90rem;
+    align-items: flex-start;
+    position: absolute;
+    margin-top: 18rem;
+    z-index: -1;
+}
+.computer,.player{
+    width: 30rem;
+    height: 38rem;
+    background-color:rgb(156, 152, 152);
+    border-radius: 1.5rem;
+}
+.cpu-score-sentence ,.player-score-sentence{
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.cpu-choice-sentence, .player-choice-sentence{
+    font-size: large;
+    text-align: center;
+    margin-top: 5.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+.score{
+    font-size: 3.6rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.player-chosen-image{
+    width: 10rem;
+    position: absolute;
+    left:  86%;
+    top: 30%;
+}
+.cpu-chosen-image{
+    width: 10rem;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+.message{
+    width: 0%;
+    height: 0%;
+    background-color: rgb(53, 52, 51);
+    top : 25%;
+    left : 24.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.popup{
+    width: 100%;
+    height: 10%;
+}
+.winner{
+    font-size: 0rem;
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif;
+    color: whitesmoke;
+}
+.shown{
+    font-size: 4.6rem;
+}
+.reset{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    width: 0;
+    height: 0rem;
+    background-color: rgb(17, 59, 107);
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 0rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+    box-shadow: 0 0 0.8rem rgb(121, 117, 117);
+}
+.resetnow{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 12rem;
+    height: 4rem;
+    font-size: 2rem;
+}
+.reset:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
